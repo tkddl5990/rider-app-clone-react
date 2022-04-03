@@ -17,6 +17,11 @@ module.exports = {
     'react/jsx-filename-extension': [2, { extensions: ['.ts', '.tsx'] }],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'no-restricted-exports': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'global-require': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
   },
   overrides: [
     {

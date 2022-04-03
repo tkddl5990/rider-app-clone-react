@@ -4,6 +4,8 @@ import * as ReactDOMClient from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import '@Styles/Global.css';
+
 const rootElement = document.getElementById('root') as HTMLElement;
 
 const root = ReactDOMClient.createRoot(rootElement);
