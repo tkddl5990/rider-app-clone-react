@@ -21,7 +21,7 @@ function Header() {
             onClick={setAsideToggleHandler}
           />
         </button>
-        <h2 className={style.headerTitle}>hello</h2>
+        <h2 className={style.headerTitle}>배송목록</h2>
         <button type='button' className={style.headerIcon}>
           <img src={icon.refresh} alt='refresh' className={style.headerIconImg} />
         </button>
