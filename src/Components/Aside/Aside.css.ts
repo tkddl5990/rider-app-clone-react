@@ -7,7 +7,7 @@ const aside = style({
   width: '70%',
   height: '100vh',
   maxWidth: '470px',
-  backgroundColor: 'red',
+  backgroundColor: '#fff',
   transition: 'left .25s linear',
   zIndex: 10,
 });

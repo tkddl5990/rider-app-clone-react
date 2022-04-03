@@ -13,6 +13,7 @@ const list = style({
   borderBottom: '1px solid #dbdbdb',
   flex: 1,
   fontSize: '1.6rem',
+  cursor: 'pointer',
   '@media': {
     'screen and (max-width: 320px)': {
       fontSize: '1.2rem',
