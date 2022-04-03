@@ -2,13 +2,20 @@ import React, { useState } from 'react';
 
 import { icon } from '@Assets/index';
 import Aside from '@Components/Aside';
+import { useStore } from '@Stores/index';
 
 import * as style from './Header.css';
 
 function Header() {
   const [toggle, setToggle] = useState(false);
+  const { isDark, setIsDark } = useStore();
 
-  const setAsideToggleHandler = () => setToggle((prev) => !prev);
+  const setAsideToggleHandler = () => {
+    setToggle((prev) => !prev);
+    setIsDark();
+  };
+
+  console.log(isDark);
 
   return (
     <>

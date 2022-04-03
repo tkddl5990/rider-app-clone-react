@@ -8,7 +8,7 @@
       "@Styles/*": ["src/Styles/*"],
       "@Components/*": ["src/Components/*"],
       "@Types/*": ["src/Types/*"],
-      "@Store": ["src/Store/*"]
+      "@Stores/*": ["src/Stores/*"]
     }
   }
 }
