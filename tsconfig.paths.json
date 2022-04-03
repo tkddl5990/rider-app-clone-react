@@ -7,7 +7,8 @@
       "@Layouts/*": ["src/Layouts/*"],
       "@Styles/*": ["src/Styles/*"],
       "@Components/*": ["src/Components/*"],
-      "@Types/*": ["src/Types/*"]
+      "@Types/*": ["src/Types/*"],
+      "@Store": ["src/Store/*"]
     }
   }
 }

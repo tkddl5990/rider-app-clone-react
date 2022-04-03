@@ -27,6 +27,6 @@ export const headerIconImg = style({
 });
 
 export const headerTitle = style({
-  fontSize: '2rem',
-  fontWeight: 'bold',
+  fontSize: '1.6rem',
+  fontWeight: '500',
 });
