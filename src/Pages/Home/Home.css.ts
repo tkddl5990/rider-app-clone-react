@@ -5,7 +5,7 @@ export const container = style({
   height: 'calc(100vh - 57px)',
 });
 
-export const bottmButton = style({
+export const bottomButton = style({
   position: 'fixed',
   bottom: 0,
   left: 0,
