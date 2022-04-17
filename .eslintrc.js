@@ -23,6 +23,8 @@ module.exports = {
     'global-require': 0,
     'jsx-a11y/no-static-element-interactions': 0,
     'react/react-in-jsx-scope': 0,
+    '@typescript-eslint/no-var-requires': 0,
+    'import/no-extraneous-dependencies': 0,
   },
   overrides: [
     {
