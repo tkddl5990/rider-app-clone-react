@@ -26,13 +26,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "lint:all": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'",
-    "lint": "lint-staged",
     "prettier": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": "eslint --fix"
+    "lint:all": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'"
   },
   "browserslist": {
     "production": [
