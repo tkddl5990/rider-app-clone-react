@@ -1,3 +1,4 @@
+import { vars } from '@Styles/Theme.css';
 import { style } from '@vanilla-extract/css';
 
 const aside = style({
@@ -7,7 +8,7 @@ const aside = style({
   width: '70%',
   height: '100vh',
   maxWidth: '470px',
-  backgroundColor: '#fff',
+  backgroundColor: vars.color.gray[100],
   transition: 'left .25s linear',
   zIndex: 10,
 });

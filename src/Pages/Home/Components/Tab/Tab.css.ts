@@ -1,3 +1,4 @@
+import { vars } from '@Styles/Theme.css';
 import { style } from '@vanilla-extract/css';
 
 export const listWrapper = style({
@@ -12,17 +13,17 @@ const list = style({
   lineHeight: '43px',
   borderBottom: '1px solid #dbdbdb',
   flex: 1,
-  fontSize: '1.6rem',
+  fontSize: vars.sizes[16],
   cursor: 'pointer',
   '@media': {
     'screen and (max-width: 320px)': {
-      fontSize: '1.2rem',
+      fontSize: vars.sizes[12],
     },
   },
 });
 
 const listActive = style({
-  borderBottom: '2px solid #333',
+  borderBottom: `2px solid ${vars.color.gray[800]}`,
   fontWeight: 600,
 });
 
