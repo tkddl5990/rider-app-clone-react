@@ -1,5 +1,5 @@
-import React from 'react';
-import * as ReactDOMClient from 'react-dom/client';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,11 +8,11 @@ import '@Styles/Global.css';
 
 const rootElement = document.getElementById('root') as HTMLElement;
 
-const root = ReactDOMClient.createRoot(rootElement);
+const root = createRoot(rootElement);
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
 
 reportWebVitals();

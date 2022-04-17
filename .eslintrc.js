@@ -22,6 +22,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     'global-require': 0,
     'jsx-a11y/no-static-element-interactions': 0,
+    'react/react-in-jsx-scope': 0,
   },
   overrides: [
     {

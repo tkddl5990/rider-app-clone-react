@@ -1,11 +1,5 @@
-import React from 'react';
-
 import * as style from './Aside.css';
-
-interface AsideProps {
-  isOpen: boolean;
-  backScreenClick: () => void;
-}
+import { AsideProps } from './Aside.type';
 
 function Aside({ isOpen, backScreenClick }: AsideProps) {
   return (
