@@ -29,6 +29,14 @@
     "prettier": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'",
     "lint:all": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "eslint --fix"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -53,6 +61,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
     "mini-css-extract-plugin": "^2.6.0",
     "prettier": "^2.6.2"
   }
