@@ -21,22 +21,18 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "typescript": "^4.6.3",
-    "web-vitals": "^2.1.4",
-    "zustand": "^3.7.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "prestart": "yarn lint",
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
-    "lint": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'",
-    "prettier": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'"
+    "prettier": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'",
+    "lint:all": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'",
+    "lint": "lint-staged",
+    "prepare": "husky install"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "eslint --fix"
   },
   "browserslist": {
     "production": [
@@ -62,6 +58,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.8",
     "mini-css-extract-plugin": "^2.6.0",
     "prettier": "^2.6.2"
   }

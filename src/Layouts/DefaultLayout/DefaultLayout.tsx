@@ -1,13 +1,16 @@
-import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Header from '@Components/Header';
+import { ChildrenProps } from '@Types/Common.type';
 
 import * as style from './DefaultLayout.css';
 
-function DefaultLayout({ children }: { children: JSX.Element[] | JSX.Element }) {
+function DefaultLayout({ children }: ChildrenProps) {
+  const location = useLocation();
+
   return (
     <main className={style.main}>
-      <Header />
+      {!location?.pathname.match(/login/gi) && <Header />}
       <section>{children}</section>
     </main>
   );

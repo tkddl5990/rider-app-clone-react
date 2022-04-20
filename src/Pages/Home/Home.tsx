@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Filter from './Components/Filter';
 import Tab from './Components/Tab';
 import { TAB_MENUS } from './constant';

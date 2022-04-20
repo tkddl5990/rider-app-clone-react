@@ -1,8 +1,9 @@
+import { vars } from '@Styles/Theme.css';
 import { style } from '@vanilla-extract/css';
 
 export const header = style({
   display: 'flex',
-  padding: '16px',
+  padding: vars.sizes[16],
   justifyContent: 'space-between',
   alignItems: 'center',
   borderBottom: '1px solid #dbdbdb',
@@ -27,6 +28,6 @@ export const headerIconImg = style({
 });
 
 export const headerTitle = style({
-  fontSize: '1.6rem',
+  fontSize: vars.sizes[16],
   fontWeight: '500',
 });

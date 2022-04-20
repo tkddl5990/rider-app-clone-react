@@ -1,6 +1,6 @@
 import { globalStyle } from '@vanilla-extract/css';
 
-globalStyle(':root', { fontSize: '10px' });
+globalStyle('html', { fontSize: '62.5%' });
 globalStyle('body, body *', {
   boxSizing: 'border-box',
   padding: '0px',
