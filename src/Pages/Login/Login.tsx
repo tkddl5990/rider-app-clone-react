@@ -1,6 +1,7 @@
 import { SyntheticEvent, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { login } from './apis/Login.api';
 import * as style from './Login.css';
 
 function Login() {
@@ -14,11 +15,12 @@ function Login() {
     if (localStorage.getItem('utk')) redirection();
   }, []);
 
-  const onSubmit = (e: SyntheticEvent) => {
+  const onSubmit = async (e: SyntheticEvent) => {
     e.preventDefault();
-    localStorage.setItem('utk', 'hello world');
     setEmail('');
     setPassword('');
+    const { data } = await login({ email, password });
+    await localStorage.setItem('utk', data?.token);
     redirection();
   };
 
