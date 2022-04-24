@@ -1,13 +1,14 @@
+import { flex } from '@Styles/Common.css';
 import { vars } from '@Styles/Theme.css';
 import { style } from '@vanilla-extract/css';
 
-export const header = style({
-  display: 'flex',
-  padding: vars.sizes[16],
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  borderBottom: '.1rem solid #dbdbdb',
-});
+export const header = style([
+  flex('center', 'space-between'),
+  {
+    padding: vars.sizes[16],
+    borderBottom: '.1rem solid #dbdbdb',
+  },
+]);
 
 export const headerIcon = style({
   selectors: {

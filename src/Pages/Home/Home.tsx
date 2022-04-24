@@ -1,6 +1,6 @@
-import Empty from './Components/Empty';
-import Filter from './Components/Filter';
-import Tab from './Components/Tab';
+import Empty from './components/Empty';
+import Filter from './components/Filter';
+import Tab from './components/Tab';
 import { dummyList, TAB_MENUS } from './constant';
 import * as style from './Home.css';
 

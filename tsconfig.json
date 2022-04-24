@@ -18,6 +18,12 @@
     "jsx": "react-jsx",
     "sourceMap": false
   },
-  "include": ["./src/**/*", "craco.config.js"],
+  "include": [
+    "./src/**/*",
+    "./src/**/**/*",
+    "./src/**/**/**/*",
+    "./src/**/**/**/**/*",
+    "craco.config.js"
+  ],
   "exclude": ["node_modules", "build"]
 }
