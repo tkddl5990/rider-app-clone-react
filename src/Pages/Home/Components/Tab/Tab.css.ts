@@ -10,7 +10,7 @@ export const listWrapper = style({
 const list = style({
   textAlign: 'center',
   height: '100%',
-  lineHeight: '4,3rem',
+  lineHeight: '4.3rem',
   borderBottom: '.1rem solid #dbdbdb',
   flex: 1,
   fontSize: vars.sizes[16],
