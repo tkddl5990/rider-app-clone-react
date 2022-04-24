@@ -3,6 +3,13 @@ export const TAB_MENUS = [
   { id: 2, name: '배송완료' },
 ];
 
+/**
+ * api endpoint : /tms/delivery/prepare/ship/list
+ * body: {
+ *  time_seq: 1 || 2
+ *  delivery_date: '2022-04-05'
+ * }
+ */
 export const dummyList = [
   {
     order_id: 2642140,
