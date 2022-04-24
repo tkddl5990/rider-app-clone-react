@@ -6,14 +6,14 @@ export const header = style({
   padding: vars.sizes[16],
   justifyContent: 'space-between',
   alignItems: 'center',
-  borderBottom: '1px solid #dbdbdb',
+  borderBottom: '.1rem solid #dbdbdb',
 });
 
 export const headerIcon = style({
   selectors: {
     [`${header} &`]: {
-      width: '20px',
-      height: '20px',
+      width: '2rem',
+      height: '2rem',
     },
   },
 });
@@ -29,5 +29,5 @@ export const headerIconImg = style({
 
 export const headerTitle = style({
   fontSize: vars.sizes[16],
-  fontWeight: '500',
+  fontWeight: 500,
 });

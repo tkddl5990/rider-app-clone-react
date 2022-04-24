@@ -7,7 +7,7 @@ const aside = style({
   left: '-70%',
   width: '70%',
   height: '100vh',
-  maxWidth: '470px',
+  maxWidth: '47rem',
   backgroundColor: vars.color.gray[100],
   transition: 'left .25s linear',
   zIndex: 10,

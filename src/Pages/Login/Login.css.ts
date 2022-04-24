@@ -10,12 +10,12 @@ export const container = style({
 });
 
 export const logo = style({
-  width: '130px',
-  height: '130px',
+  width: '13rem',
+  height: '13rem',
   backgroundColor: vars.color.gray[800],
   color: vars.color.gray[100],
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  marginBottom: '80px',
+  marginBottom: '8rem',
 });

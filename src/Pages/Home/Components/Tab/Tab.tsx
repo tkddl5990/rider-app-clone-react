@@ -1,7 +1,15 @@
 import { useState } from 'react';
 
 import * as style from './Tab.css';
-import { TabProps } from './Tab.type';
+
+interface TabItem {
+  id: number;
+  name: string;
+}
+
+interface TabProps {
+  tabs: TabItem[];
+}
 
 function Tab({ tabs }: TabProps) {
   const [active, setActive] = useState(0);

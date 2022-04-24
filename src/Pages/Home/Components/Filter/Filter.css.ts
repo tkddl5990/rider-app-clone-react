@@ -30,7 +30,7 @@ export const statusBox = style({
 export const statusList = style({
   border: `1px solid ${vars.color.gray[800]}`,
   width: '48%',
-  height: '40px',
+  height: '4rem',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -39,7 +39,7 @@ export const statusList = style({
 
 const inactive = style({
   color: vars.color.gray[300],
-  border: `1px solid ${vars.color.gray[300]}`,
+  border: `.1rem solid ${vars.color.gray[300]}`,
 });
 
 export const statusListInActive = style([statusList, inactive]);

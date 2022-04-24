@@ -1,5 +1,6 @@
 import { globalStyle } from '@vanilla-extract/css';
 
+// font-size: 10px = 1rem;
 globalStyle('html', { fontSize: '62.5%' });
 globalStyle('body, body *', {
   boxSizing: 'border-box',

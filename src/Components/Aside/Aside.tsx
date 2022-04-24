@@ -1,7 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 
 import * as style from './Aside.css';
-import { AsideProps } from './Aside.type';
+
+interface AsideProps {
+  isOpen: boolean;
+  backScreenClick: () => void;
+}
 
 function Aside({ isOpen, backScreenClick }: AsideProps) {
   const navigate = useNavigate();
