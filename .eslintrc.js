@@ -22,7 +22,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     'global-require': 0,
     'jsx-a11y/no-static-element-interactions': 0,
-    'react/react-in-jsx-scope': 0,
+    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-var-requires': 0,
     'import/no-extraneous-dependencies': 0,
   },
