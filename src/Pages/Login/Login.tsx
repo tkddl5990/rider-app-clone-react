@@ -1,6 +1,8 @@
 import { SyntheticEvent, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { useMutation } from 'react-query';
+
 import { login } from './apis/Login.api';
 import * as style from './Login.css';
 
@@ -11,6 +13,16 @@ function Login() {
 
   const redirection = () => navigate('/', { replace: true });
 
+  const loginMutation = useMutation(login, {
+    onSuccess: (result) => {
+      const { data } = result;
+      if ('token' in data) {
+        localStorage.setItem('utk', data?.token);
+        redirection();
+      }
+    },
+  });
+
   useEffect(() => {
     if (localStorage.getItem('utk')) redirection();
   }, []);
@@ -19,9 +31,7 @@ function Login() {
     e.preventDefault();
     setEmail('');
     setPassword('');
-    const { data } = await login({ email, password });
-    await localStorage.setItem('utk', data?.token);
-    redirection();
+    loginMutation.mutate({ email, password });
   };
 
   return (
