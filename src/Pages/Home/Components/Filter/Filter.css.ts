@@ -1,3 +1,4 @@
+import { flex } from '@Styles/Common.css';
 import { vars } from '@Styles/Theme.css';
 import { convertRem } from '@Styles/Utils';
 import { style } from '@vanilla-extract/css';
@@ -17,7 +18,7 @@ export const box = style({
 
 export const dateBox = style({
   border: `1px solid ${vars.color.gray[800]}`,
-  height: '44px',
+  height: '4.4rem',
   padding: vars.sizes[16],
 });
 
@@ -27,19 +28,19 @@ export const statusBox = style({
   gap: '4%',
 });
 
-export const statusList = style({
-  border: `1px solid ${vars.color.gray[800]}`,
-  width: '48%',
-  height: '40px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  fontSize: vars.sizes[14],
-});
+export const statusList = style([
+  flex('center', 'center'),
+  {
+    border: `1px solid ${vars.color.gray[800]}`,
+    width: '48%',
+    height: '4rem',
+    fontSize: vars.sizes[14],
+  },
+]);
 
 const inactive = style({
   color: vars.color.gray[300],
-  border: `1px solid ${vars.color.gray[300]}`,
+  border: `.1rem solid ${vars.color.gray[300]}`,
 });
 
 export const statusListInActive = style([statusList, inactive]);

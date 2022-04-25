@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { icon } from '@Assets/index';
+import { icon } from '@Assets/images';
 import Aside from '@Components/Aside';
 
 import * as style from './Header.css';

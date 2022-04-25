@@ -1,11 +1,12 @@
 import { globalStyle } from '@vanilla-extract/css';
 
+// font-size: 10px = 1rem;
 globalStyle('html', { fontSize: '62.5%' });
-globalStyle('body, body *', {
+globalStyle('body, body *, body *::after, bosy *::before', {
   boxSizing: 'border-box',
-  padding: '0px',
+  padding: 0,
+  margin: 0,
   fontFamily: 'sans-serif',
-  margin: '0px',
 });
 globalStyle('ul, li', {
   listStyle: 'none',
@@ -13,4 +14,8 @@ globalStyle('ul, li', {
 globalStyle('button, img', {
   border: 0,
   outline: 'none',
+});
+globalStyle('input, textarea, select', {
+  outline: 'none',
+  border: 0,
 });
