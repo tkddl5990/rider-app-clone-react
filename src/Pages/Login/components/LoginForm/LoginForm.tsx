@@ -1,7 +1,8 @@
 import { SyntheticEvent, useState } from 'react';
 
-import * as style from '../Login.css';
-import { LoginParams } from '../Login.type';
+import { LoginParams } from '../../Login.type';
+
+import * as style from './LoginForm.css';
 
 function LoginForm({ onSubmit }: { onSubmit: ({ email, password }: LoginParams) => void }) {
   const [email, setEmail] = useState('');

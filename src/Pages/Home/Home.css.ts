@@ -21,5 +21,5 @@ export const bottomButton = style({
 export const listWrapper = style({
   height: 'calc(100% - (4.3rem + 17rem + 5.4rem))',
   backgroundColor: '#f6f6f7',
-  textAlign: 'center',
+  paddingTop: vars.sizes[16],
 });

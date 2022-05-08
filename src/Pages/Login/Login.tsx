@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import axios from 'axios';
 import { useMutation } from 'react-query';
 
 import { login } from './apis/Login.api';
@@ -21,6 +22,7 @@ function Login() {
         redirection();
       }
     },
+    onError: () => alert('공통모달 추가예정'),
   });
 
   useEffect(() => {
