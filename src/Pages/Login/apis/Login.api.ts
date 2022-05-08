@@ -2,11 +2,9 @@ import axios from 'axios';
 
 import type { LoginFail, LoginParams, LoginSuccess } from '../Login.type';
 
-const BASE_URL = 'https://test-rider.api.pet-friends.co.kr';
-
 export const login = async ({ email, password }: LoginParams) => {
   try {
-    const res: LoginSuccess = await axios.post(`${BASE_URL}/tms/user/login`, {
+    const res: LoginSuccess = await axios.post(`${process.env.REACT_APP_BASE_URL}/tms/user/login`, {
       email,
       password,
     });

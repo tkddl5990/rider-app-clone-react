@@ -2,7 +2,7 @@ import { globalStyle } from '@vanilla-extract/css';
 
 // font-size: 10px = 1rem;
 globalStyle('html', { fontSize: '62.5%' });
-globalStyle('body, body *, body *::after, bosy *::before', {
+globalStyle('body, body *, body *::after, body *::before', {
   boxSizing: 'border-box',
   padding: 0,
   margin: 0,
