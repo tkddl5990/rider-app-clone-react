@@ -7,10 +7,11 @@ export const container = style({
 });
 
 export const bottomButton = style({
-  position: 'fixed',
+  position: 'absolute',
   bottom: 0,
   left: 0,
   right: 0,
+  maxWidth: '375px',
   height: '5.4rem',
   backgroundColor: vars.color.blue.default,
   color: vars.color.gray[100],
