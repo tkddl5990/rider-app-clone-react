@@ -8,7 +8,7 @@ import Login from '@Pages/Login';
 function PrivateRoute() {
   const userToken = localStorage.getItem('utk');
 
-  if (!userToken) return <Navigate to='/login' replace />;
+  // if (!userToken) return <Navigate to='/login' replace />;
 
   return <Outlet />;
 }
