@@ -1,13 +1,8 @@
-import { AxiosResponse } from 'axios';
-import { useQuery } from 'react-query';
 
-import RiderList from '@Components/RiderList';
-import { RiderData } from '@Components/RiderList/RiderList.type';
+import Empty from './Components/Empty';
+import Filter from './Containers/Filter';
+import Tab from './Containers/Tab';
 
-import { getList } from './apis/Home.api';
-import Empty from './components/Empty';
-import Filter from './components/Filter';
-import Tab from './components/Tab';
 import { dummyList, TAB_MENUS } from './constant';
 import * as style from './Home.css';
 
