@@ -1,4 +1,3 @@
-/* eslint-disable import/no-mutable-exports */
 import axios from 'axios';
 
 const token = localStorage.getItem('utk') ?? '';
