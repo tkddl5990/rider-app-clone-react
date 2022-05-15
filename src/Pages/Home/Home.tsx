@@ -8,8 +8,8 @@ import { RiderData } from '@Components/RiderList/RiderList.type';
 
 import { getList } from './apis/Home.api';
 import Empty from './components/Empty';
-import Filter from './components/Filter';
-import Tab from './components/Tab';
+import Filter from './Containers/Filter';
+import Tab from './Containers/Tab';
 import { dummyList, TAB_MENUS } from './constant';
 import * as style from './Home.css';
 
