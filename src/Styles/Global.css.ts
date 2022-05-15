@@ -19,3 +19,9 @@ globalStyle('input, textarea, select', {
   outline: 'none',
   border: 0,
 });
+globalStyle('#root', {
+  maxWidth: '375px',
+  margin: '0 auto',
+  border: '1px solid #efefef',
+  overflow: 'hidden',
+});
