@@ -19,7 +19,7 @@ function RouteContainer() {
       <Routes>
         <Route element={<PrivateRoute />}>
           <Route path='/' element={<Home />} />
-          <Route path='/detail' element={<Detail />} />
+          <Route path='/detail/:id' element={<Detail />} />
         </Route>
         <Route path='/login' element={<Login />} />
       </Routes>

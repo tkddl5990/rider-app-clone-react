@@ -1,10 +1,16 @@
 import * as style from './RiderList.css';
 import { RiderProps } from './RiderList.type';
 
-function RiderList({ data }: RiderProps) {
+function RiderList({ data, goDetail }: RiderProps) {
   const num = data.index + 1;
+
+  const goDetailHandler = () => {
+    const { order_id: orderId } = data;
+    goDetail(orderId);
+  };
+
   return (
-    <li className={style.listWrapper}>
+    <li className={style.listWrapper} onClick={goDetailHandler}>
       <div className={style.listTitle}>
         <div className={style.listTitleLeft}>
           <p className={style.listTitleNumber}>{num}</p>

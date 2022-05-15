@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import { AxiosResponse } from 'axios';
 import { useQuery } from 'react-query';
 
@@ -22,11 +24,14 @@ interface GetListResponse {
 }
 
 function Home() {
-  const { isLoading, data } = useQuery<AxiosResponse<GetListResponse>>(['getList'], () =>
+  const navigate = useNavigate();
+  const { isLoading, data: _ } = useQuery<AxiosResponse<GetListResponse>>(['getList'], () =>
     getList({ time_seq: '1', delivery_date: '2022-04-05' })
   );
 
-  console.log(data);
+  const goDetail = (orderId: number) => {
+    navigate(`/detail/${orderId}`);
+  };
 
   return (
     <div className={style.container}>
@@ -36,7 +41,7 @@ function Home() {
         <div className={style.listWrapper}>
           {dummyList.length ? (
             dummyList.map((item, index) => (
-              <RiderList key={item.order_id} data={{ ...item, index }} />
+              <RiderList key={item.order_id} data={{ ...item, index }} goDetail={goDetail} />
             ))
           ) : (
             <Empty />

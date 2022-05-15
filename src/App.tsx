@@ -5,7 +5,13 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 
 import Routes from './Routes';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 function App() {
   return (

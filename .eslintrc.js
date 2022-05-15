@@ -25,6 +25,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-var-requires': 0,
     'import/no-extraneous-dependencies': 0,
+    camelcase: 'off',
   },
   overrides: [
     {

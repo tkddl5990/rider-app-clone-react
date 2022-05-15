@@ -21,4 +21,5 @@ interface RiderDataIndex extends RiderData {
 
 export interface RiderProps {
   data: RiderDataIndex;
+  goDetail: (id: number) => void;
 }
